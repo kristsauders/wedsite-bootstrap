@@ -43,7 +43,7 @@
                     callback = callback || function(data) { alert(JSON.stringify(data)); };
                     errorCallback = errorCallback || function(error) { alert(error); };
                     $.ajax({
-                        url: 'http://riak.kristsauders.com/buckets/att-js/keys/' + key,
+                        url: 'http://riak.kristsauders.com/riak/test/' + key,
                         type: 'get',
                         success: function(data) {
                             callback(data);
