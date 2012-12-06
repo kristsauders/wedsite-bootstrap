@@ -43,7 +43,7 @@
                     callback = callback || function(data) { alert(JSON.stringify(data)); };
                     errorCallback = errorCallback || function(error) { alert(error); };
                     $.ajax({
-                        url: 'http://riak.kristsauders.com/buckets/att-js/keys/' + key,
+                        url: 'http://riak.kristsauders.com/riak/test/' + key,
                         type: 'get',
                         success: function(data) {
                             callback(data);
@@ -130,12 +130,12 @@
                     <br/>
                     <p>
                         <a href="https://www.facebook.com/media/set/?set=a.4291429157581.2164514.1042050175&type=3" target="_blank">
-                            <img class="fbimg" src="disposables.jpg" />
+                            <img class="fbimg" src="disposables.jpg" /> 
                         </a>
                     </p>
                 </div>
             </div>
-
+<!-- Comment -->
         <script src="bootstrap.min.js"></script>
     </body>
 </html>
